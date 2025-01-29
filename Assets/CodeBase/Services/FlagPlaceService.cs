@@ -1,5 +1,4 @@
-﻿using System;
-using CodeBase.Castles;
+﻿using CodeBase.Castles;
 using CodeBase.Flags;
 using CodeBase.Inputs;
 using UnityEngine;

@@ -2,7 +2,6 @@
 using CodeBase.Services;
 using CodeBase.SpawnableObjects.Minerals;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace CodeBase
 {
