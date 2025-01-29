@@ -11,6 +11,9 @@ namespace CodeBase.Services
 
     public class FlagPlaceService : MonoBehaviour
     {
+        private const string CastleLayerName = "Castle";
+        private const string OtherLayerName = "Other";
+        
         private PlayerInput _playerInput;
         private FlagPlacer _flagPlacer;
         
@@ -26,8 +29,8 @@ namespace CodeBase.Services
             _playerInput = GetComponent<PlayerInput>();
             _flagPlacer = GetComponent<FlagPlacer>();
             
-            CastleLayer = LayerMask.NameToLayer("Castle");
-            OtherLayer = LayerMask.NameToLayer("Other");
+            CastleLayer = LayerMask.NameToLayer(CastleLayerName);
+            OtherLayer = LayerMask.NameToLayer(OtherLayerName);
 
             _castleLayerMaskNumber = 1 << CastleLayer;
             _otherLayerMaskNumber = 1 << OtherLayer;

@@ -6,6 +6,7 @@ namespace CodeBase.Inputs
     public class PlayerInput : MonoBehaviour
     {
         private const int LeftMouseButton = 0;
+        
         private Camera _mainCamera;
 
         public event Action<Ray> RayCasted;
@@ -28,6 +29,5 @@ namespace CodeBase.Inputs
 
         private static bool IsLeftButtonClicked() =>
             Input.GetMouseButtonDown(LeftMouseButton);
-        
     }
 }
