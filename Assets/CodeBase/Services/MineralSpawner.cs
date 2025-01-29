@@ -20,7 +20,7 @@ namespace CodeBase.Services
         private void Spawn(Vector3 position)
         {
             Mineral mineral = Instantiate(_prefab);
-            mineral.Init(position);
+            mineral.Initialize(position);
         }
 
         private IEnumerator StartResourceSpawning()

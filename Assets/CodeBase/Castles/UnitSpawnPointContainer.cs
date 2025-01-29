@@ -5,7 +5,6 @@ namespace CodeBase.Castles
 {
     public class UnitSpawnPointContainer : MonoBehaviour
     {
-        private Transform _transform;
         private List<Vector3> _spawnPoints;
 
         public List<Vector3> SpawnPoints => new List<Vector3>(_spawnPoints);
