@@ -12,6 +12,9 @@ namespace CodeBase.Services
             Castle castle = Instantiate(_castlePrefab, position, Quaternion.identity, null);
             castle.Construct();
             
+            float positionY = castle.transform.position.y + (castle.transform.localScale.y / 2f);
+            castle.Initialize(new Vector3(castle.transform.position.x, positionY, castle.transform.position.z));
+            
             return castle;
         }
 

@@ -44,6 +44,11 @@ namespace CodeBase.Castles
             _mineralsData = new MineralsData();
         }
 
+        public void Initialize(Vector3 position)
+        {
+            transform.position = position;
+        }
+
         private void Start()
         {
             InstantiateCollectors();
