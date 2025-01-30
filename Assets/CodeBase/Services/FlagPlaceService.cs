@@ -36,12 +36,12 @@ namespace CodeBase.Services
         }
 
         private void OnEnable() => 
-            _playerInput.RayCasted += Handle;
+            _playerInput.RayCasted += HandleRaycast;
 
         private void OnDisable() => 
-            _playerInput.RayCasted -= Handle;
+            _playerInput.RayCasted -= HandleRaycast;
 
-        private void Handle(Ray ray)
+        private void HandleRaycast(Ray ray)
         {
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
             {
